@@ -1,0 +1,92 @@
+mutation SeedData @transaction @auth(level: PUBLIC, insecureReason: "This is seed data intended for public access.") {
+  user_insertMany(data: [
+    {
+      id: "6e2d1d05-b062-4b2a-8c7c-4c2d2f7a6f2f",
+      name: "John Doe",
+      email: "john.doe@example.com",
+      createdAt: "2023-01-01T10:00:00Z",
+      bio: "Experienced software engineer with a passion for web development.",
+      phoneNumber: "123-456-7890",
+      linkedInUrl: "https://linkedin.com/in/johndoe",
+      githubUrl: "https://github.com/johndoe",
+      websiteUrl: "https://johndoe.dev"
+    },
+    {
+      id: "7c2a2f7b-6f2e-4d2c-8a8a-5e2d1d05b062",
+      name: "Jane Smith",
+      email: "jane.smith@example.com",
+      createdAt: "2023-02-15T11:30:00Z",
+      bio: "UI/UX designer with a focus on creating intuitive user experiences.",
+      phoneNumber: "987-654-3210",
+      linkedInUrl: "https://linkedin.com/in/janesmith",
+      githubUrl: "https://github.com/janesmith",
+      websiteUrl: "https://janesmith.design"
+    }
+  ])
+  experience_insertMany(data: [
+    {
+      userId: "6e2d1d05-b062-4b2a-8c7c-4c2d2f7a6f2f",
+      company: "Tech Solutions Inc.",
+      title: "Senior Software Engineer",
+      startDate: "2020-05-01",
+      endDate: "2023-01-31",
+      description: "Developed and maintained web applications using React and Node.js.",
+      createdAt: "2023-01-01T10:05:00Z"
+    },
+    {
+      userId: "7c2a2f7b-6f2e-4d2c-8a8a-5e2d1d05b062",
+      company: "Creative Agency",
+      title: "Lead UI/UX Designer",
+      startDate: "2019-08-01",
+      endDate: "2022-12-31",
+      description: "Designed user interfaces and experiences for various client projects.",
+      createdAt: "2023-02-15T11:35:00Z"
+    }
+  ])
+  project_insertMany(data: [
+    {
+      userId: "6e2d1d05-b062-4b2a-8c7c-4c2d2f7a6f2f",
+      title: "Portfolio Website",
+      description: "Personal website to showcase projects and skills.",
+      createdAt: "2023-03-01T09:00:00Z",
+      technologiesUsed: "React, Gatsby, GraphQL",
+      demoUrl: "https://johndoe.dev",
+      repositoryUrl: "https://github.com/johndoe/portfolio"
+    },
+    {
+      userId: "7c2a2f7b-6f2e-4d2c-8a8a-5e2d1d05b062",
+      title: "Mobile App Redesign",
+      description: "Led the redesign of a popular mobile application, improving user engagement.",
+      createdAt: "2023-04-10T14:20:00Z",
+      technologiesUsed: "Figma, Sketch, Adobe XD",
+      demoUrl: "https://janesmith.design/app-redesign",
+      repositoryUrl: null
+    }
+  ])
+  skill_insertMany(data: [
+    {
+      userId: "6e2d1d05-b062-4b2a-8c7c-4c2d2f7a6f2f",
+      name: "React",
+      createdAt: "2023-01-05T08:00:00Z",
+      category: "Frontend"
+    },
+    {
+      userId: "6e2d1d05-b062-4b2a-8c7c-4c2d2f7a6f2f",
+      name: "Node.js",
+      createdAt: "2023-01-05T08:01:00Z",
+      category: "Backend"
+    },
+    {
+      userId: "7c2a2f7b-6f2e-4d2c-8a8a-5e2d1d05b062",
+      name: "Figma",
+      createdAt: "2023-02-20T10:00:00Z",
+      category: "Design"
+    },
+    {
+      userId: "7c2a2f7b-6f2e-4d2c-8a8a-5e2d1d05b062",
+      name: "User Research",
+      createdAt: "2023-02-20T10:05:00Z",
+      category: "Design"
+    }
+  ])
+}

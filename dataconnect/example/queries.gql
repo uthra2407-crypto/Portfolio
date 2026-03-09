@@ -1,0 +1,54 @@
+query GetMyProfile @auth(level: USER) {
+  user(key: {id_expr: "auth.uid"}) {
+    id
+    name
+    email
+    bio
+    phoneNumber
+    linkedInUrl
+    githubUrl
+    websiteUrl
+  }
+}
+
+query ListAllProjects @auth(level: PUBLIC, insecureReason: "This operation is safe to expose to the public as it lists public projects.") {
+  projects(orderBy: [{createdAt: DESC}]) {
+    id
+    title
+    description
+    imageUrl
+    demoUrl
+    repositoryUrl
+    technologiesUsed
+    user {
+      id
+      name
+    }
+  }
+}
+
+mutation AddExperience(
+  $company: String!,
+  $title: String!,
+  $startDate: Date!,
+  $endDate: Date,
+  $description: String
+) @auth(level: USER) {
+  experience_insert(data: {
+    userId_expr: "auth.uid",
+    company: $company,
+    title: $title,
+    startDate: $startDate,
+    endDate: $endDate,
+    description: $description,
+    createdAt_expr: "request.time"
+  })
+}
+
+query GetUserSkills($userId: UUID!) @auth(level: USER, insecureReason: "This operation is safe to expose to all logged in users as it fetches skills for a specific user ID.") {
+  skills(where: {userId: {eq: $userId}}) {
+    id
+    name
+    category
+  }
+}
