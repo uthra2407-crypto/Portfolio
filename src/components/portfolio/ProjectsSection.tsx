@@ -4,32 +4,29 @@ import AnimatedSection from "./AnimatedSection";
 
 const projects = [
   {
-    title: "CloudSync Dashboard",
-    description: "Real-time analytics dashboard with live data streaming, role-based access, and interactive visualizations.",
-    tech: ["React", "TypeScript", "D3.js", "Node.js", "WebSockets"],
-    github: "https://github.com",
+    title: "Web Hosting Through Custom Docker Container",
+    description: "This project demonstrates a complete web hosting solution using custom Docker containers. It includes autoscaling, monitoring, and efficient resource management for hosting web applications with a backend and frontend.",
+    tech: ["Django", "Docker", "Python"],
+    github: "https://github.com/uthra2407-crypto/Web-Hosting-Through-Custom-Docker-Container",
     demo: "https://example.com",
   },
   {
-    title: "DevFlow CLI",
-    description: "A developer productivity CLI tool that automates project scaffolding, testing pipelines, and deployments.",
-    tech: ["Go", "Docker", "GitHub Actions", "PostgreSQL"],
-    github: "https://github.com",
-    demo: "https://example.com",
+    title: "Sentiment Analysis on Feedback of Education Institution",
+    description: "This project analyzes student feedback and classifies it as Positive, Negative, or Neutral using Machine Learning. It helps educational institutions understand student opinions and gain insights to make better academic and administrative decisions.",
+    tech: ["Python", "Django", "SVM", "Matplotlib"],
+    github: "https://github.com/uthra2407-crypto/Sentiment-Analysis-on-Feedback-of-Education-Institution",
+  },
+   {
+    title: "Weather Application",
+    description: "A user-friendly weather application that fetches real-time weather data using a public API and displays it in a clean and interactive UI. The application shows temperature, humidity, and wind speed, along with dynamic weather images that change based on current weather conditions.",
+    tech: ["HTML", "CSS", "JavaScript","OpenWeatherMap API"],
+    github: "https://github.com/uthra2407-crypto/Weather-Application",
   },
   {
-    title: "PixelMarket",
-    description: "E-commerce platform for digital assets featuring secure payments, asset previews, and creator dashboards.",
-    tech: ["Next.js", "Stripe", "Prisma", "Tailwind CSS"],
-    github: "https://github.com",
-    demo: "https://example.com",
-  },
-  {
-    title: "NoteGraph",
-    description: "Knowledge management app with graph-based note linking, markdown support, and real-time collaboration.",
-    tech: ["React", "GraphQL", "Redis", "AWS"],
-    github: "https://github.com",
-    demo: "https://example.com",
+    title: "Todo List",
+    description: "A simple one-page To-Do List web application built using Django.Users can add, view, update, edit and delete tasks.",
+    tech: ["HTML","CSS","JavaScript"],
+    github: "https://github.com/uthra2407-crypto/ToDoList",
   },
 ];
 
@@ -68,9 +65,7 @@ export default function ProjectsSection() {
                   <a href={p.github} target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-foreground transition-colors">
                     <Github size={18} />
                   </a>
-                  <a href={p.demo} target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-foreground transition-colors">
-                    <ExternalLink size={18} />
-                  </a>
+                  
                 </div>
               </motion.div>
             </AnimatedSection>

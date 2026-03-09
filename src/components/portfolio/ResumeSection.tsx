@@ -1,6 +1,7 @@
 import { motion } from "framer-motion";
 import { Download, Briefcase } from "lucide-react";
 import AnimatedSection from "./AnimatedSection";
+import Resume from "/public/UTHRA_Resume.pdf";
 
 export default function ResumeSection() {
   return (
@@ -19,15 +20,16 @@ export default function ResumeSection() {
                 <Briefcase size={24} className="text-primary" />
               </div>
               <div>
-                <h3 className="font-semibold text-foreground text-lg">5+ Years of Experience</h3>
+                <h3 className="font-semibold text-foreground text-lg">Experience</h3>
                 <p className="text-muted-foreground text-sm mt-1 leading-relaxed">
-                  From early-stage startups to enterprise teams, I've shipped production code across the stack — building APIs, designing databases, and crafting polished UIs.
+                  Developed web applications and websites using React.js and supported testing
+activities to ensure quality and performance.Worked closely with developers to deliver features on time.
                 </p>
               </div>
             </div>
 
             <motion.a
-              href="/resume.pdf"
+              href="/UTHRA_Resume.pdf"
               download
               whileHover={{ scale: 1.04 }}
               whileTap={{ scale: 0.97 }}

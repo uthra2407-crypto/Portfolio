@@ -1,7 +1,7 @@
 import { lazy, Suspense } from "react";
 import { motion } from "framer-motion";
 import { ArrowDown, Download } from "lucide-react";
-import profileImg from "@/assets/profile.png";
+import Uthra from "@/assets/Uthra.jpeg";
 
 const ParticleSphere = lazy(() => import("./ParticleSphere"));
 
@@ -29,13 +29,13 @@ export default function HeroSection() {
               Hello, I'm
             </motion.p>
             <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold leading-tight mb-4">
-              <span className="gradient-text">Alex Chen</span>
+              <span className="gradient-text">Sri Thiripura Sundari Uthra K</span>
             </h1>
             <h2 className="text-xl sm:text-2xl font-medium text-secondary-foreground mb-6">
-              Full-Stack Software Developer
+              Associate Software Developer
             </h2>
             <p className="text-muted-foreground max-w-md mb-8 leading-relaxed">
-              I craft performant, accessible web experiences that bridge design and engineering. Passionate about clean code and creative problem-solving.
+             Computer Science graduate and aspiring Software Developer passionate about building impactful applications.
             </p>
 
             <div className="flex flex-wrap gap-4">
@@ -66,8 +66,8 @@ export default function HeroSection() {
             {/* Round profile image */}
             <div className="relative z-10 w-48 h-48 sm:w-56 sm:h-56 lg:w-64 lg:h-64 rounded-full overflow-hidden border-2 border-primary/30 glow-border">
               <img
-                src={profileImg}
-                alt="Alex Chen"
+                src={Uthra}
+                alt="Uthra"
                 className="w-full h-full object-cover"
               />
             </div>

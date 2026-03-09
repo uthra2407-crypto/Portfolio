@@ -4,19 +4,19 @@ import AnimatedSection from "./AnimatedSection";
 const categories = [
   {
     title: "Languages",
-    skills: ["TypeScript", "JavaScript", "Python", "Go", "SQL"],
+    skills: [ "Python", "Java(Basic)","JavaScript", "SQL"],
   },
   {
-    title: "Frontend",
-    skills: ["React", "Next.js", "Tailwind CSS", "Framer Motion", "Three.js"],
-  },
-  {
-    title: "Backend",
-    skills: ["Node.js", "Express", "PostgreSQL", "Redis", "GraphQL"],
+    title: "Web Development",
+    skills: ["React","HTML5","CSS", "Django"],
   },
   {
     title: "Tools",
-    skills: ["Git", "Docker", "AWS", "CI/CD", "Figma"],
+    skills: ["PowerBI","Docker"],
+  },
+  {
+    title: "Library",
+    skills: ["Numpy", "Pandas", "Matplotlib"],
   },
 ];
 

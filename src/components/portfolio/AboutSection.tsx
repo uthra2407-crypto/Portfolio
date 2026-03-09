@@ -14,11 +14,10 @@ export default function AboutSection() {
           <AnimatedSection delay={0.1}>
             <div className="glass-card p-8 space-y-4">
               <p className="text-secondary-foreground leading-relaxed">
-                I'm a full-stack software developer with 5+ years of experience building robust web applications. My journey started with tinkering on small scripts and evolved into architecting scalable systems used by thousands.
+                Enthusiastic Computer Science graduate with hands-on experience as an Associate Software Developer. Passionate about problem-solving and building impactful software solutions. Skilled in Python, SQL, and ReactJS, with a strong interest in developing scalable applications and continuously learning modern technologies.
               </p>
               <p className="text-muted-foreground leading-relaxed">
-                I thrive on turning complex problems into elegant, user-friendly solutions. Whether it's optimizing a database query or fine-tuning a pixel-perfect UI, I bring the same attention to detail.
-              </p>
+                I enjoy solving problems and building applications that are simple, efficient, and user-friendly. I focus on writing clean code and creating good user experiences.</p>
             </div>
           </AnimatedSection>
 
@@ -27,10 +26,10 @@ export default function AboutSection() {
               <h3 className="text-lg font-semibold text-foreground">My Approach</h3>
               <ul className="space-y-3 text-muted-foreground">
                 {[
-                  "Write clean, maintainable code that teams love",
+                  "Write clean, maintainable code that user expects",
                   "Prioritize performance and accessibility from day one",
                   "Communicate clearly and collaborate effectively",
-                  "Continuously learn and adopt modern best practices",
+                  "Continuously learn and adopt modern best technologies",
                 ].map((item, i) => (
                   <li key={i} className="flex items-start gap-3">
                     <span className="mt-1.5 w-1.5 h-1.5 rounded-full bg-primary shrink-0" />
