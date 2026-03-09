@@ -1,6 +1,7 @@
 import { lazy, Suspense } from "react";
 import { motion } from "framer-motion";
 import { ArrowDown, Download } from "lucide-react";
+import profileImg from "@/assets/profile.png";
 
 const ParticleSphere = lazy(() => import("./ParticleSphere"));
 
