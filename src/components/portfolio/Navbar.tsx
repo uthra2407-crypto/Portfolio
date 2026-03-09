@@ -22,7 +22,7 @@ export default function Navbar() {
     >
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-between h-16">
         <a href="#" className="text-lg font-bold gradient-text">
-          {"<Dev />"}
+          {"Portfolio"}
         </a>
 
         {/* Desktop */}
