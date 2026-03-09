@@ -46,7 +46,7 @@ export default function HeroSection() {
                 View Projects <ArrowDown size={16} />
               </a>
               <a
-                href="/resume.pdf"
+                href="\UTHRA_Resume.pdf"
                 download
                 className="inline-flex items-center gap-2 px-6 py-3 rounded-lg border border-border text-foreground font-medium hover:border-primary/50 transition-colors hover-scale"
               >
