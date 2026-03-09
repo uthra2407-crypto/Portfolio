@@ -55,16 +55,28 @@ export default function HeroSection() {
             </div>
           </motion.div>
 
-          {/* 3D Sphere */}
+          {/* Right column: profile image + 3D sphere */}
           <motion.div
             initial={{ opacity: 0, scale: 0.8 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 1, delay: 0.3 }}
-            className="h-[350px] sm:h-[420px] lg:h-[480px]"
+            className="relative h-[350px] sm:h-[420px] lg:h-[480px] flex items-center justify-center"
           >
-            <Suspense fallback={<div className="w-full h-full flex items-center justify-center text-muted-foreground">Loading...</div>}>
-              <ParticleSphere />
-            </Suspense>
+            {/* 3D background */}
+            <div className="absolute inset-0">
+              <Suspense fallback={null}>
+                <ParticleSphere />
+              </Suspense>
+            </div>
+
+            {/* Round profile image */}
+            <div className="relative z-10 w-48 h-48 sm:w-56 sm:h-56 lg:w-64 lg:h-64 rounded-full overflow-hidden border-2 border-primary/30 glow-border">
+              <img
+                src={profileImg}
+                alt="Alex Chen"
+                className="w-full h-full object-cover"
+              />
+            </div>
           </motion.div>
         </div>
       </div>
