@@ -62,12 +62,6 @@ export default function HeroSection() {
             transition={{ duration: 1, delay: 0.3 }}
             className="relative h-[350px] sm:h-[420px] lg:h-[480px] flex items-center justify-center"
           >
-            {/* 3D background */}
-            <div className="absolute inset-0">
-              <Suspense fallback={null}>
-                <ParticleSphere />
-              </Suspense>
-            </div>
 
             {/* Round profile image */}
             <div className="relative z-10 w-48 h-48 sm:w-56 sm:h-56 lg:w-64 lg:h-64 rounded-full overflow-hidden border-2 border-primary/30 glow-border">
